@@ -3,6 +3,7 @@
 	"description": "Save the video to your playist",
 	"version": "0.0.1",
 	"browser_action": {
+		"default_icon": "icon.png",
 		"default_popup": "index.html",
 		"default_title": "LTTKGP"
 	},
@@ -10,6 +11,9 @@
 	"background": {
 		"page": "background.html",
 		"persistent": false
+	},
+	"icons": {
+		"128": "icon.png"
 	},
 	"manifest_version": 2,
 	"content_scripts": [
