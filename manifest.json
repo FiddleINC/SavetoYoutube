@@ -1,0 +1,21 @@
+{
+	"name": "Listen to this KGP",
+	"description": "Save the video to your playist",
+	"version": "0.0.1",
+	"browser_action": {
+		"default_popup": "index.html",
+		"default_title": "LTTKGP"
+	},
+	"permissions": [ "contextMenus", "tabs", "activeTab", "storage" ],
+	"background": {
+		"page": "background.html",
+		"persistent": false
+	},
+	"manifest_version": 2,
+	"content_scripts": [
+		{
+			"matches": [ "https://www.facebook.com/groups/lttkgp" ],
+			"js": [ "axios.min.js", "content.js" ]
+		}
+	]
+}
